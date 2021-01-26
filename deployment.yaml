@@ -30,7 +30,6 @@ kind: Service
 apiVersion: v1
 metadata:
   name: go-service
-  #namespace: go
 spec:
   selector:
     app: goapi
@@ -51,7 +50,7 @@ metadata:
     allow.http: "false"
 spec:
   rules:
-  - host: go.rancher.dev-ops-ninja.com
+  - host: go.rancher.archtools.com.br
     http:
       paths:
         - path: /
